@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_button">Start Game</string>
+    <string name="steam_punked_logo">Steam Punked logo</string>
+    <string name="spinner_text">Select playing area size</string>
+    <string name="btn_install">Install</string>
+    <string name="btn_discard">Discard</string>
+    <string name="btn_surrender">Surrender</string>
+    <string name="surrender">Surrender</string>
+    <string name="verify_surrender">Are you sure  you want to surrender?</string>
+    <string name="lbl_game_size">Game Area Size:</string>
+    <string name="winner_title">You\'re a Winner!</string>
+</resources>

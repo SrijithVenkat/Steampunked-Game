@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <view
+        android:id="@+id/gameView"
+        class="edu.msu.srijithv.steampunked.GameView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/button2"
+            android:text="@string/lbl_now_playing"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lbl_playerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textView"
+            android:layout_alignEnd="@id/button5"
+            android:layout_toEndOf="@id/textView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/textView"
+            android:layout_alignStart="@id/button4"
+            android:layout_alignEnd="@id/button4"
+            android:onClick="onInstallClick"
+            android:text="@string/btn_install" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@id/button2"
+            android:layout_alignStart="@id/button5"
+            android:layout_alignEnd="@id/button5"
+            android:layout_toEndOf="@id/button2"
+            android:onClick="onDiscardClick"
+            android:text="@string/btn_discard" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/button2"
+            android:onClick="onOpenValveClick"
+            android:text="@string/btn_open_valve" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@id/button4"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/button4"
+            android:onClick="onSurrenderClick"
+            android:text="@string/btn_surrender" />
+
+    </RelativeLayout>
+</LinearLayout>
